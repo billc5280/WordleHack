@@ -23,10 +23,10 @@ int main() {
         //   Third guess : 'cheap'
         //   Fourth guess: 'cream'
         //   Fifth guess : 'clear' (This is the wordle word.)
-        //   if (find_others(word, 'a', 3)
+        //   if (Utils::find_others(word, 'a', 3)
         //       && word.find('d') == string::npos
         //       && word.find('i') == string::npos
-        //       && find_others(word, 'e', 2)
+        //       && Utils::find_others(word, 'e', 2)
         //       && word.find('u') == string::npos
         //       && word.find('b') == string::npos
         //       && word.find('s') == string::npos
@@ -34,8 +34,8 @@ int main() {
         //       && word.find('h') == string::npos
         //       && word.find('p') == string::npos
         //       && word.find('m') == string::npos
-        //       && find_others(word, 'c', 0)
-        //       && find_except(word, 'r', { 1 })
+        //       && Utils::find_others(word, 'c', 0)
+        //       && Utils::find_except(word, 'r', { 1 })
         //    )
 
         if (//word.find('a') == string::npos
