@@ -52,6 +52,27 @@ TEST_F(UtilsFixture, findOthers) {
     EXPECT_EQ(results.size(), 14);
 }
 
+TEST_F(UtilsFixture, findOthers_loyal) {
+
+    vector<string> words;
+    vector<string> results;
+
+    words.emplace_back("royal");
+    words.emplace_back("loyal");
+
+    for (const auto &word: words) {
+        if (Utils::find_others(word, 'l', 4))
+            results.push_back(word);
+    }
+
+    cout << "Number found: " << results.size() << endl << endl;
+    for (const auto &result: results) {
+        cout << result << endl;
+    }
+
+    EXPECT_EQ(results.size(), 2);
+}
+
 TEST_F(UtilsFixture, findExcept) {
 
     vector<string> words;
